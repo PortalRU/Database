@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?scenebuilder-background-color 0x000000ff?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="simpledb.Controller">
+  <children>
+    <TabPane layoutX="0.0" layoutY="0.0" prefHeight="700.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+      <tabs>
+        <Tab text="Teacher">
+          <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="369.0" prefWidth="700.0">
+              <children>
+                <VBox layoutX="531.0" layoutY="14.0" prefHeight="74.0" prefWidth="55.0">
+                  <children>
+                    <Button id="" fx:id="TEACHER_SAVE_BUTTON" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleButtonAction" prefWidth="55.0" text="Save" textAlignment="CENTER">
+                      <VBox.margin>
+                        <Insets bottom="5.0" />
+                      </VBox.margin>
+                    </Button>
+                    <Button id="" fx:id="TEACHER_SHOW_BUTTON" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleButtonAction" prefWidth="55.0" text="Show" textAlignment="CENTER">
+                      <VBox.margin>
+                        <Insets bottom="5.0" />
+                      </VBox.margin>
+                    </Button>
+                    <Button id="" fx:id="TEACHER_DELETE_BUTTON" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleButtonAction" prefWidth="55.0" text="Delete" textAlignment="CENTER">
+                      <VBox.margin>
+                        <Insets bottom="5.0" />
+                      </VBox.margin>
+                    </Button>
+                  </children>
+                </VBox>
+                <VBox layoutX="14.0" layoutY="14.0" prefHeight="184.0" prefWidth="500.0">
+                  <children>
+                    <TextField id="" fx:id="TEACHER_ID" prefWidth="200.0" promptText="ID">
+                      <VBox.margin>
+                        <Insets bottom="5.0" />
+                      </VBox.margin>
+                    </TextField>
+                    <TextField fx:id="TEACHER_FIRSTNAME" prefWidth="200.0" promptText="Firstname">
+                      <VBox.margin>
+                        <Insets bottom="5.0" />
+                      </VBox.margin>
+                    </TextField>
+                    <TextField fx:id="TEACHER_LASTNAME" prefWidth="200.0" promptText="Lastname">
+                      <VBox.margin>
+                        <Insets bottom="5.0" />
+                      </VBox.margin>
+                    </TextField>
+                    <TextField fx:id="TEACHER_ADRESS" prefWidth="200.0" promptText="Adress">
+                      <VBox.margin>
+                        <Insets bottom="5.0" />
+                      </VBox.margin>
+                    </TextField>
+                    <TextField fx:id="TEACHER_TELEPHONE" prefWidth="200.0" promptText="Phone number">
+                      <VBox.margin>
+                        <Insets bottom="5.0" />
+                      </VBox.margin>
+                    </TextField>
+                    <TextField fx:id="TEACHER_SALARY" prefWidth="200.0" promptText="Salary">
+                      <VBox.margin>
+                        <Insets bottom="5.0" />
+                      </VBox.margin>
+                    </TextField>
+                    <TextField fx:id="TEACHER_EXPIRIENCE" prefWidth="200.0" promptText="Expirience">
+                      <VBox.margin>
+                        <Insets bottom="5.0" />
+                      </VBox.margin>
+                    </TextField>
+                  </children>
+                </VBox>
+                <TextArea fx:id="TEACHER_DB" layoutX="14.0" layoutY="255.0" prefHeight="400.0" prefWidth="572.0" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="Cabinet">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="369.0" prefWidth="700.0">
+              <children>
+                <VBox layoutX="531.0" layoutY="14.0" prefHeight="74.0" prefWidth="55.0">
+                  <children>
+                    <Button fx:id="CABINET_SAVE_BUTTON" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleButtonAction" prefWidth="55.0" text="Save" textAlignment="CENTER">
+                      <VBox.margin>
+                        <Insets bottom="5.0" />
+                      </VBox.margin>
+                    </Button>
+                    <Button fx:id="CABINET_SHOW_BUTTON" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleButtonAction" prefWidth="55.0" text="Show" textAlignment="CENTER">
+                      <VBox.margin>
+                        <Insets bottom="5.0" />
+                      </VBox.margin>
+                    </Button>
+                    <Button fx:id="CABINET_DELETE_BUTTON" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleButtonAction" prefWidth="55.0" text="Delete" textAlignment="CENTER">
+                      <VBox.margin>
+                        <Insets bottom="5.0" />
+                      </VBox.margin>
+                    </Button>
+                  </children>
+                </VBox>
+                <VBox layoutX="14.0" layoutY="14.0" prefHeight="165.0" prefWidth="500.0">
+                  <children>
+                    <TextField fx:id="CABINET_ID" prefWidth="200.0" promptText="Cabinet ID">
+                      <VBox.margin>
+                        <Insets bottom="5.0" />
+                      </VBox.margin>
+                    </TextField>
+                    <TextField fx:id="CABINET_SEAT" prefWidth="200.0" promptText="Number of seat">
+                      <VBox.margin>
+                        <Insets bottom="5.0" />
+                      </VBox.margin>
+                    </TextField>
+                    <TextField fx:id="CABINET_EQUPMENT" prefWidth="200.0" promptText="Number of equpment">
+                      <VBox.margin>
+                        <Insets bottom="5.0" />
+                      </VBox.margin>
+                    </TextField>
+                  </children>
+                </VBox>
+                <TextArea fx:id="CABINET_DB" layoutX="14.0" layoutY="255.0" prefHeight="400.0" prefWidth="572.0" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="Teacher cabinet">
+          <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="369.0" prefWidth="700.0">
+              <children>
+                <VBox layoutX="531.0" layoutY="14.0" prefHeight="74.0" prefWidth="55.0">
+                  <children>
+                    <Button fx:id="TEACHER_CABINET_SAVE_BUTTON" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleButtonAction" prefWidth="55.0" text="Save" textAlignment="CENTER">
+                      <VBox.margin>
+                        <Insets bottom="5.0" />
+                      </VBox.margin>
+                    </Button>
+                    <Button fx:id="TEACHER_CABINET_SHOW_BUTTON" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleButtonAction" prefWidth="55.0" text="Show" textAlignment="CENTER">
+                      <VBox.margin>
+                        <Insets bottom="5.0" />
+                      </VBox.margin>
+                    </Button>
+                    <Button fx:id="TEACHER_CABINET_DELETE_BUTTON" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleButtonAction" prefWidth="55.0" text="Delete" textAlignment="CENTER">
+                      <VBox.margin>
+                        <Insets bottom="5.0" />
+                      </VBox.margin>
+                    </Button>
+                  </children>
+                </VBox>
+                <VBox layoutX="14.0" layoutY="14.0" prefHeight="184.0" prefWidth="500.0">
+                  <children>
+                    <TextField fx:id="TEACHER_CABINET_TEACHER_ID" prefWidth="200.0" promptText="Teacher id">
+                      <VBox.margin>
+                        <Insets bottom="5.0" />
+                      </VBox.margin>
+                    </TextField>
+                    <TextField fx:id="TEACHER_CABINET_CABINET_ID" prefWidth="200.0" promptText="Cabinet id">
+                      <VBox.margin>
+                        <Insets bottom="5.0" />
+                      </VBox.margin>
+                    </TextField>
+                  </children>
+                </VBox>
+                <TextArea fx:id="TEACHER_CABINET_DB" layoutX="14.0" layoutY="255.0" prefHeight="400.0" prefWidth="572.0" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="Students">
+          <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="369.0" prefWidth="700.0">
+              <children>
+                <VBox layoutX="531.0" layoutY="14.0" prefHeight="74.0" prefWidth="55.0">
+                  <children>
+                    <Button fx:id="STUDENT_SAVE_BUTTON" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleButtonAction" prefWidth="55.0" text="Save" textAlignment="CENTER">
+                      <VBox.margin>
+                        <Insets bottom="5.0" />
+                      </VBox.margin>
+                    </Button>
+                    <Button fx:id="STUDENT_SHOW_BUTTON" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleButtonAction" prefWidth="55.0" text="Show" textAlignment="CENTER">
+                      <VBox.margin>
+                        <Insets bottom="5.0" />
+                      </VBox.margin>
+                    </Button>
+                    <Button fx:id="STUDENT_DELETE_BUTTON" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleButtonAction" prefWidth="55.0" text="Delete" textAlignment="CENTER">
+                      <VBox.margin>
+                        <Insets bottom="5.0" />
+                      </VBox.margin>
+                    </Button>
+                  </children>
+                </VBox>
+                <VBox layoutX="14.0" layoutY="14.0" prefHeight="184.0" prefWidth="500.0">
+                  <children>
+                    <TextField id="" fx:id="STUDENT_ID" prefWidth="200.0" promptText="ID">
+                      <VBox.margin>
+                        <Insets bottom="5.0" />
+                      </VBox.margin>
+                    </TextField>
+                    <TextField id="" fx:id="STUDENT_FIRSTNAME" prefWidth="200.0" promptText="First name">
+                      <VBox.margin>
+                        <Insets bottom="5.0" />
+                      </VBox.margin>
+                    </TextField>
+                    <TextField id="" fx:id="STUDENT_LASTNAME" prefWidth="200.0" promptText="Last name">
+                      <VBox.margin>
+                        <Insets bottom="5.0" />
+                      </VBox.margin>
+                    </TextField>
+                    <TextField id="" fx:id="STUDENT_ADRESS" prefWidth="200.0" promptText="Adress" text="">
+                      <VBox.margin>
+                        <Insets bottom="5.0" />
+                      </VBox.margin>
+                    </TextField>
+                    <TextField id="" fx:id="STUDENT_TELEPHONE" prefWidth="200.0" promptText="Phone number">
+                      <VBox.margin>
+                        <Insets bottom="5.0" />
+                      </VBox.margin>
+                    </TextField>
+                    <TextField fx:id="STUDENT_GROUP_ID" prefWidth="200.0" promptText="Group ID" />
+                  </children>
+                </VBox>
+                <TextArea fx:id="STUDENT_DB" layoutX="14.0" layoutY="255.0" prefHeight="400.0" prefWidth="572.0" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="Groups">
+          <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="369.0" prefWidth="700.0">
+              <children>
+                <VBox layoutX="531.0" layoutY="14.0" prefHeight="74.0" prefWidth="55.0">
+                  <children>
+                    <Button fx:id="GROUP_SAVE_BUTTON" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleButtonAction" prefWidth="55.0" text="Save" textAlignment="CENTER">
+                      <VBox.margin>
+                        <Insets bottom="5.0" />
+                      </VBox.margin>
+                    </Button>
+                    <Button fx:id="GROUP_SHOW_BUTTON" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleButtonAction" prefWidth="55.0" text="Show" textAlignment="CENTER">
+                      <VBox.margin>
+                        <Insets bottom="5.0" />
+                      </VBox.margin>
+                    </Button>
+                    <Button fx:id="GROUP_DELETE_BUTTON" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleButtonAction" prefWidth="55.0" text="Delete" textAlignment="CENTER">
+                      <VBox.margin>
+                        <Insets bottom="5.0" />
+                      </VBox.margin>
+                    </Button>
+                  </children>
+                </VBox>
+                <VBox layoutX="14.0" layoutY="14.0" prefHeight="184.0" prefWidth="500.0">
+                  <children>
+                    <TextField fx:id="GROUP_ID" prefWidth="200.0" promptText="Group id">
+                      <VBox.margin>
+                        <Insets bottom="5.0" />
+                      </VBox.margin>
+                    </TextField>
+                    <TextField fx:id="GROUP_STUDENT_COUNT" prefWidth="200.0" promptText="Count of students" text="">
+                      <VBox.margin>
+                        <Insets bottom="5.0" />
+                      </VBox.margin>
+                    </TextField>
+                  </children>
+                </VBox>
+                <TextArea fx:id="GROUP_DB" layoutX="14.0" layoutY="255.0" prefHeight="400.0" prefWidth="572.0" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="Class">
+          <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="369.0" prefWidth="700.0">
+              <children>
+                <VBox layoutX="531.0" layoutY="14.0" prefHeight="74.0" prefWidth="55.0">
+                  <children>
+                    <Button fx:id="CLASS_SAVE_BUTTON" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleButtonAction" prefWidth="55.0" text="Save" textAlignment="CENTER">
+                      <VBox.margin>
+                        <Insets bottom="5.0" />
+                      </VBox.margin>
+                    </Button>
+                    <Button fx:id="CLASS_SHOW_BUTTON" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleButtonAction" prefWidth="55.0" text="Show" textAlignment="CENTER">
+                      <VBox.margin>
+                        <Insets bottom="5.0" />
+                      </VBox.margin>
+                    </Button>
+                    <Button fx:id="CLASS_DELETE_BUTTON" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleButtonAction" prefWidth="55.0" text="Delete" textAlignment="CENTER">
+                      <VBox.margin>
+                        <Insets bottom="5.0" />
+                      </VBox.margin>
+                    </Button>
+                  </children>
+                </VBox>
+                <VBox layoutX="14.0" layoutY="14.0" prefHeight="184.0" prefWidth="500.0">
+                  <children>
+                    <TextField fx:id="CLASS_TEACHER_ID" prefWidth="200.0" promptText="Teacher id">
+                      <VBox.margin>
+                        <Insets bottom="5.0" />
+                      </VBox.margin>
+                    </TextField>
+                    <TextField fx:id="CLASS_GROUP_ID" prefWidth="200.0" promptText="Group id">
+                      <VBox.margin>
+                        <Insets bottom="5.0" />
+                      </VBox.margin>
+                    </TextField>
+                    <TextField fx:id="CLASS_NAME" prefWidth="200.0" promptText="Class name">
+                      <VBox.margin>
+                        <Insets bottom="5.0" />
+                      </VBox.margin>
+                    </TextField>
+                  </children>
+                </VBox>
+                <TextArea fx:id="CLASS_DB" layoutX="14.0" layoutY="255.0" prefHeight="400.0" prefWidth="572.0" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="Prime_key">
+          <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="369.0" prefWidth="700.0">
+              <children>
+                <VBox layoutX="531.0" layoutY="14.0" minHeight="24.0" prefHeight="24.0" prefWidth="55.0">
+                  <children>
+                    <Button id="" fx:id="PRIME_SHOW_BUTTON" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleButtonAction" prefWidth="55.0" text="Show" textAlignment="CENTER">
+                      <VBox.margin>
+                        <Insets bottom="5.0" />
+                      </VBox.margin>
+                    </Button>
+                  </children>
+                </VBox>
+                <TextArea id="" fx:id="PRIME_DB" layoutX="14.0" layoutY="75.0" prefHeight="580.0" prefWidth="572.0" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+      </tabs>
+    </TabPane>
+  </children>
+</AnchorPane>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="206.0" prefWidth="150.0" stylesheets="@light_theme.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="simpledb.Controller">
+    <children>
+        <VBox prefHeight="173.0" prefWidth="120.0" AnchorPane.bottomAnchor="37.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="10.0">
+            <children>
+                <Label alignment="CENTER" cache="false" contentDisplay="CENTER" mnemonicParsing="false" mouseTransparent="false" pickOnBounds="false" prefWidth="100.0" text="Welcome" textAlignment="JUSTIFY" textOverrun="LEADING_WORD_ELLIPSIS" wrapText="true">
+                    <VBox.margin>
+                        <Insets bottom="20.0" left="10.0" right="10.0" />
+                    </VBox.margin>
+                </Label>
+                <TextField fx:id="USERNAME" prefWidth="200.0" promptText="Username">
+                    <VBox.margin>
+                        <Insets bottom="15.0" />
+                    </VBox.margin>
+                </TextField>
+                <PasswordField fx:id="PASSWORD" prefWidth="200.0" promptText="Password">
+                    <VBox.margin>
+                        <Insets bottom="20.0" />
+                    </VBox.margin>
+                </PasswordField>
+                <Button alignment="CENTER" contentDisplay="TOP" onAction="#handleButtonAction" mnemonicParsing="false" prefWidth="100.0" fx:id="SIGN_IN" text="Sign in" textAlignment="CENTER" wrapText="true">
+                    <VBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                    </VBox.margin>
+                </Button>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>
